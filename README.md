@@ -6,7 +6,7 @@
 
 ![screenshot](./app_screenshot.jpeg)
 
-"Math magicians" is a website for all fans of mathematics. It allows users to make simple calculations and react a random math-releted quote.
+"Math magicians" is a website for all fans of mathematics. It allows users to make simple calculations and read a random math-releted quote.
 
 ## Built With
 
