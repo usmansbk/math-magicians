@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Math Magicians",
+  "name": "\"Math magicians\" is a website for all fans of mathematics.",
   "icons": [
     {
       "src": "favicon.ico",
