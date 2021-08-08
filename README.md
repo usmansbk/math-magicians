@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://usmansbk.github.io/repo_name)
+[Live Demo Link](https://usmansbk.github.io/math-magicians)
 
 ## Getting Started
 
@@ -27,8 +27,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 ```bash
-git clone https://github.com/usmansbk/repo_name.git
-cd ./repo_name
+git clone https://github.com/usmansbk/math-magicians.git
+cd ./math-magicians
 ```
 
 ### Install
