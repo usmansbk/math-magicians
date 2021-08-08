@@ -1,5 +1,3 @@
-import './App.css';
-
 const App = () => (
   <div>
     <h1>Welcome to Microverse</h1>
