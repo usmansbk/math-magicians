@@ -3,27 +3,30 @@
   padding: 0;
 }
 
-button:hover {
+.button:hover {
   opacity: 0.9;
   cursor: pointer;
 }
 
-button:active {
+.button:active {
   opacity: 0.6;
 }
 
 .calculator {
-  width: 25%;
   background-color: lightgray;
   padding-bottom: 1px;
+  width: 25%;
 }
 
 .output {
-  padding: 10px 2px;
+  height: 48px;
+  padding: 0 4px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background-color: lightslategray;
   color: white;
   font-size: 20px;
-  text-align: end;
 }
 
 .grid {
