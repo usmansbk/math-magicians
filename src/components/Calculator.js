@@ -75,6 +75,10 @@ class Calculator extends React.Component {
     };
   }
 
+  onClickHandler = (event) => {
+    console.log(event.target.value);
+  };
+
   render() {
     const { display } = this.state;
 
@@ -82,7 +86,15 @@ class Calculator extends React.Component {
       <div className="calculator">
         <p className="output">{display}</p>
         <div className="grid">
-          {buttons.map(({ text, className }) => <button className={`grid-item ${className || ''}`} key={text} type="button">{text}</button>)}
+          {buttons.map(({ text, className }) => (
+            <input
+              value={text}
+              className={`button grid-item ${className || ''}`}
+              key={text}
+              type="button"
+              onClick={this.onClickHandler}
+            />
+          ))}
         </div>
       </div>
     );
