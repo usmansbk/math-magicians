@@ -11,7 +11,7 @@ const buttons = [
     text: '%',
   },
   {
-    text: '/',
+    text: '÷',
     className: 'bg-orange',
   },
   {
