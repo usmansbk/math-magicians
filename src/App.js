@@ -5,14 +5,16 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      output: null,
+      input: null,
     };
   }
 
-  render() {
-    const { output } = this.state;
+  onInputChange = (input) => this.setState({ input });
 
-    return <Calculator output={output} />;
+  render() {
+    const { input } = this.state;
+
+    return <Calculator input={input} onInputChange={this.onInputChange} />;
   }
 }
 
