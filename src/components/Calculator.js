@@ -51,6 +51,7 @@ const buttons = [
   },
   {
     text: '0',
+    className: 'grid-item span-2-col',
   },
   {
     text: '.',
@@ -75,9 +76,9 @@ class Calculator extends React.Component {
 
     return (
       <div className="calculator">
-        <p className="display">{display}</p>
-        <div className="buttons">
-          {buttons.map(({ text }) => <button className="calculator-btn" id={text} key={text} type="button">{text}</button>)}
+        <p className="output">{display}</p>
+        <div className="grid">
+          {buttons.map(({ text, className }) => <button className={className || 'grid-item'} key={text} type="button">{text}</button>)}
         </div>
       </div>
     );
