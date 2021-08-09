@@ -1,4 +1,4 @@
-import React from 'react';
+import { useCallback, useState } from 'react';
 import calculate from '../logic/calculate';
 
 const buttons = [
@@ -68,9 +68,9 @@ const buttons = [
 ];
 
 const Calculator = () => {
-  const [state, setState] = React.useState({});
+  const [state, setState] = useState({});
 
-  const onClickHandler = React.useCallback((event) => {
+  const onClickHandler = useCallback((event) => {
     setState((prev) => {
       const output = calculate(prev, event.target.value);
       return ({
