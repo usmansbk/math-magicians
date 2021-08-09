@@ -15,6 +15,7 @@
 .calculator {
   background-color: lightgray;
   padding-bottom: 1px;
+  width: 25%;
 }
 
 .output {
