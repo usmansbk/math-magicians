@@ -71,7 +71,7 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = calculate(null, 'AC');
+    this.state = {};
   }
 
   onClickHandler = (event) => {
