@@ -11,6 +11,9 @@ const buttons = [
     text: '%',
   },
   {
+    text: '/',
+  },
+  {
     text: '7',
   },
   {
@@ -74,7 +77,7 @@ class Calculator extends React.Component {
       <div className="calculator">
         <p className="display">{display}</p>
         <div className="buttons">
-          {buttons.map(({ text }) => <button key={text} type="button">{text}</button>)}
+          {buttons.map(({ text }) => <button className="calculator-btn" id={text} key={text} type="button">{text}</button>)}
         </div>
       </div>
     );
