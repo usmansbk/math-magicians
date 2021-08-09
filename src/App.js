@@ -1,7 +1,5 @@
-const App = () => (
-  <div>
-    <h1>Welcome to Microverse</h1>
-  </div>
-);
+import Calculator from './components/Calculator';
+
+const App = () => <Calculator />;
 
 export default App;
