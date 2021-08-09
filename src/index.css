@@ -3,15 +3,42 @@
   padding: 0;
 }
 
-.calculator {
-  padding: 16px;
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 
-.buttons {
+button:active {
+  opacity: 0.6;
+}
+
+.calculator {
+  width: 25%;
+  background-color: lightgray;
+  padding-bottom: 1px;
+}
+
+.output {
+  padding: 10px 2px;
+  background-color: lightslategray;
+  color: white;
+  font-size: 20px;
+  text-align: end;
+}
+
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+  margin-top: 1px;
 }
 
-.display {
-  text-align: end;
+.grid-item {
+  border: none;
+  height: 48px;
+  background-color: white;
+}
+
+.span-2-col {
+  grid-column: 1 / span 2;
 }
