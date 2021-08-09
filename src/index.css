@@ -42,3 +42,7 @@ button:active {
 .span-2-col {
   grid-column: 1 / span 2;
 }
+
+.bg-orange {
+  background-color: orange;
+}
