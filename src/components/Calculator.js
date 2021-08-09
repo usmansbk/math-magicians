@@ -63,16 +63,16 @@ class Calculator extends React.Component {
     super(props);
 
     this.state = {
-      input: '0',
+      display: '0',
     };
   }
 
   render() {
-    const { input } = this.state;
+    const { display } = this.state;
 
     return (
       <div className="calculator">
-        <p className="display">{input}</p>
+        <p className="display">{display}</p>
         <div className="buttons">
           {buttons.map(({ text }) => <button key={text} type="button">{text}</button>)}
         </div>
