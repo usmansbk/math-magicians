@@ -55,7 +55,7 @@ const buttons = [
   },
   {
     text: '0',
-    className: 'grid-item span-2-col',
+    className: 'span-2-col',
   },
   {
     text: '.',
