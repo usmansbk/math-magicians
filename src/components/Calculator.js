@@ -71,7 +71,13 @@ const Calculator = () => {
   const [state, setState] = React.useState({});
 
   const onClickHandler = React.useCallback((event) => {
-    setState((prevState) => calculate(prevState, event.target.value));
+    setState((prev) => {
+      const output = calculate(prev, event.target.value);
+      return ({
+        ...prev,
+        ...output,
+      });
+    });
   }, []);
 
   const { total, next, operation } = state;
