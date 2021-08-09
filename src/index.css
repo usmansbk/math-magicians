@@ -2,3 +2,16 @@
   margin: 0;
   padding: 0;
 }
+
+.calculator {
+  padding: 16px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.display {
+  text-align: end;
+}
