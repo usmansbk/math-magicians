@@ -8,8 +8,6 @@
 }
 
 .calculator {
-  background-color: lightgray;
-  padding-bottom: 1px;
   width: 50%;
 }
 
@@ -28,7 +26,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1px;
-  margin-top: 1px;
+  background-color: lightgray;
+  border: solid 1px lightgray;
 }
 
 .grid-item {
