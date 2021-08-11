@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 const routes = [
   {
     name: 'Home',
-    path: '/home',
+    path: '/',
   },
   {
     name: 'Calculator',
@@ -21,7 +23,7 @@ const App = () => (
         <ul>
           {routes.map(({ name, path }) => (
             <li key={path}>
-              <a href={path}>{name}</a>
+              <Link to={path}>{name}</Link>
             </li>
           ))}
         </ul>
