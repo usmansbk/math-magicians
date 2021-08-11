@@ -1,0 +1,11 @@
+.quote-section {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-size: 30px;
+    color: gray;
+}

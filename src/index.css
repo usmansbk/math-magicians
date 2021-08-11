@@ -6,6 +6,15 @@
   font-family: 'Montserrat', sans-serif;;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  width: 100%;
+}
+
 ul {
   list-style-type: none;
 }
@@ -27,8 +36,16 @@ a {
   gap: 40px;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .container {
   padding: 16px;
+  display: flex;
+  flex-grow: 1;
 }
 
 .section-title {
