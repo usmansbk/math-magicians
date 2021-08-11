@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import calculate from '../logic/calculate';
-import './Caculator.css';
+import './Calculator.css';
 
 const buttons = [
   {
