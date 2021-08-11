@@ -28,7 +28,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 16px 24px;
 }
 
 .nav-links {
@@ -43,7 +43,7 @@ a {
 }
 
 .container {
-  padding: 16px;
+  padding: 16px 24px;
   display: flex;
   flex-grow: 1;
 }
