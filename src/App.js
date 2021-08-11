@@ -1,4 +1,6 @@
-import { Link, Switch, Route } from 'react-router-dom';
+import {
+  Link, Switch, Route, BrowserRouter,
+} from 'react-router-dom';
 import Home from './components/Home';
 
 const routes = [
@@ -20,24 +22,26 @@ const routes = [
 ];
 
 const App = () => (
-  <>
-    <header>
-      <h1>Math Magicians</h1>
-      <nav>
-        <ul>
-          {routes.map(({ name, path }) => (
-            <li key={path}>
-              <Link to={path}>{name}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
-    <Switch>
-      {routes.map(({ path, component: Component }) => (
-        <Route key={path} path={path}><Component /></Route>))}
-    </Switch>
-  </>
+  <BrowserRouter>
+    <>
+      <header>
+        <h1>Math Magicians</h1>
+        <nav>
+          <ul>
+            {routes.map(({ name, path }) => (
+              <li key={path}>
+                <Link to={path}>{name}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </header>
+      <Switch>
+        {routes.map(({ path, component: Component }) => (
+          <Route key={path} path={path}><Component /></Route>))}
+      </Switch>
+    </>
+  </BrowserRouter>
 );
 
 export default App;
