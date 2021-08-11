@@ -6,7 +6,7 @@ Mauris eget libero ut turpis ultrices mattis vitae ac velit. Nam est odio, solli
 
 const Home = () => (
   <section className="home">
-    <h1>Welcome to our page!</h1>
+    <h2 className="section-title">Welcome to our page!</h2>
     <p>{CONTENT}</p>
     <p>{CONTENT}</p>
   </section>

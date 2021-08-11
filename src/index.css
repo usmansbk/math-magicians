@@ -30,3 +30,8 @@ a {
 .container {
   padding: 16px;
 }
+
+.section-title {
+  font-size: 48px;
+  color: orange;
+}

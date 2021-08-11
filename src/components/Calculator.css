@@ -10,7 +10,7 @@
 .calculator {
   background-color: lightgray;
   padding-bottom: 1px;
-  width: 25%;
+  width: 50%;
 }
 
 .output {
@@ -43,4 +43,9 @@
 
 .bg-orange {
   background-color: orange;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: space-between;
 }

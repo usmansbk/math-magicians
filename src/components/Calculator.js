@@ -85,8 +85,8 @@ const Calculator = () => {
   const display = (total || '') + (operation || '') + (next || '');
 
   return (
-    <section>
-      <h2>Let&apos;s do some math</h2>
+    <section className="calculator-container">
+      <h2 className="section-title">Let&apos;s do some math</h2>
       <div className="calculator">
         <div className="output">
           <p>{display || '0'}</p>
