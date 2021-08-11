@@ -26,10 +26,10 @@ const routes = [
 const App = () => (
   <BrowserRouter>
     <>
-      <header>
+      <header className="app-bar">
         <h1>Math Magicians</h1>
-        <nav>
-          <ul>
+        <nav className="nav">
+          <ul className="nav-links">
             {routes.map(({ name, path }) => (
               <li key={path}>
                 <Link to={path}>{name}</Link>
@@ -38,10 +38,12 @@ const App = () => (
           </ul>
         </nav>
       </header>
-      <Switch>
-        {routes.map(({ path, component }) => (
-          <Route key={path} path={path}>{component}</Route>)).reverse()}
-      </Switch>
+      <div className="container">
+        <Switch>
+          {routes.map(({ path, component }) => (
+            <Route key={path} path={path}>{component}</Route>)).reverse()}
+        </Switch>
+      </div>
     </>
   </BrowserRouter>
 );
