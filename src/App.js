@@ -1,17 +1,21 @@
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
+import Home from './components/Home';
 
 const routes = [
   {
     name: 'Home',
     path: '/',
+    component: Home,
   },
   {
     name: 'Calculator',
     path: '/calculator',
+    component: Home,
   },
   {
     name: 'Quote',
     path: '/quote',
+    component: Home,
   },
 ];
 
@@ -29,6 +33,10 @@ const App = () => (
         </ul>
       </nav>
     </header>
+    <Switch>
+      {routes.map(({ path, component: Component }) => (
+        <Route key={path} path={path}><Component /></Route>))}
+    </Switch>
   </>
 );
 
