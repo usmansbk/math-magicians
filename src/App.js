@@ -2,6 +2,7 @@ import {
   Link, Switch, Route, BrowserRouter,
 } from 'react-router-dom';
 import Home from './components/Home';
+import Calculator from './components/Calculator';
 
 const routes = [
   {
@@ -12,7 +13,7 @@ const routes = [
   {
     name: 'Calculator',
     path: '/calculator',
-    component: Home,
+    component: Calculator,
   },
   {
     name: 'Quote',
@@ -38,7 +39,7 @@ const App = () => (
       </header>
       <Switch>
         {routes.map(({ path, component: Component }) => (
-          <Route key={path} path={path}><Component /></Route>))}
+          <Route key={path} path={path}><Component /></Route>)).reverse()}
       </Switch>
     </>
   </BrowserRouter>
