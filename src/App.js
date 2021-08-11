@@ -1,5 +1,5 @@
 import {
-  Link, Switch, Route, BrowserRouter,
+  NavLink, Switch, Route, BrowserRouter,
 } from 'react-router-dom';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
@@ -32,7 +32,7 @@ const App = () => (
           <ul className="nav-links">
             {routes.map(({ name, path }) => (
               <li key={path}>
-                <Link to={path}>{name}</Link>
+                <NavLink exact activeClassName="active" to={path}>{name}</NavLink>
               </li>
             ))}
           </ul>
@@ -41,7 +41,7 @@ const App = () => (
       <div className="container">
         <Switch>
           {routes.map(({ path, component }) => (
-            <Route key={path} path={path}>{component}</Route>)).reverse()}
+            <Route exact key={path} path={path}>{component}</Route>))}
         </Switch>
       </div>
     </>

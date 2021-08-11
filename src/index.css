@@ -52,3 +52,8 @@ a {
   font-size: 48px;
   color: orange;
 }
+
+.active {
+  font-weight: bold;
+  color: orange;
+}
