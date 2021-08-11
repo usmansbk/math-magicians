@@ -9,17 +9,17 @@ const routes = [
   {
     name: 'Home',
     path: '/',
-    component: Home,
+    component: <Home />,
   },
   {
     name: 'Calculator',
     path: '/calculator',
-    component: Calculator,
+    component: <Calculator />,
   },
   {
     name: 'Quote',
     path: '/quote',
-    component: Quote,
+    component: <Quote />,
   },
 ];
 
@@ -39,8 +39,8 @@ const App = () => (
         </nav>
       </header>
       <Switch>
-        {routes.map(({ path, component: Component }) => (
-          <Route key={path} path={path}><Component /></Route>)).reverse()}
+        {routes.map(({ path, component }) => (
+          <Route key={path} path={path}>{component}</Route>)).reverse()}
       </Switch>
     </>
   </BrowserRouter>
