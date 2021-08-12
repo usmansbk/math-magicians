@@ -29,6 +29,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2px;
+  background-color: #ecf0f1;
 }
 
 .grid-item {
@@ -52,4 +53,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  background-image: url(../imgs/maths.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
