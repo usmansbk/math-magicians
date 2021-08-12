@@ -1,5 +1,5 @@
 import {
-  NavLink, Switch, Route, BrowserRouter,
+  NavLink, Switch, Route, HashRouter as Router,
 } from 'react-router-dom';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
@@ -24,7 +24,7 @@ const routes = [
 ];
 
 const App = () => (
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <Router basename={process.env.PUBLIC_URL}>
     <>
       <header className="app-bar">
         <h1>Math Magicians</h1>
@@ -45,7 +45,7 @@ const App = () => (
         </Switch>
       </div>
     </>
-  </BrowserRouter>
+  </Router>
 );
 
 export default App;
