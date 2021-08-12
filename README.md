@@ -15,6 +15,7 @@
 ## Live Demo
 
 [Heroku](https://usmansbk-math-magicians.herokuapp.com/)
+[Netlify](https://hardcore-meitner-6153b1.netlify.app/)
 
 ## Getting Started
 
