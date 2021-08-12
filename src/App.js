@@ -23,21 +23,25 @@ const routes = [
   },
 ];
 
+const Header = () => (
+  <header className="app-bar">
+    <h1 className="app-title">Math Magicians</h1>
+    <nav className="nav">
+      <ul className="nav-links">
+        {routes.map(({ name, path }) => (
+          <li key={path}>
+            <NavLink exact activeClassName="active" to={path}>{name}</NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </header>
+);
+
 const App = () => (
   <Router basename={process.env.PUBLIC_URL}>
     <>
-      <header className="app-bar">
-        <h1 className="app-title">Math Magicians</h1>
-        <nav className="nav">
-          <ul className="nav-links">
-            {routes.map(({ name, path }) => (
-              <li key={path}>
-                <NavLink exact activeClassName="active" to={path}>{name}</NavLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <div className="container">
         <Switch>
           {routes.map(({ path, component }) => (

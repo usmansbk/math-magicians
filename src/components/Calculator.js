@@ -89,28 +89,30 @@ const Calculator = () => {
   const display = (total || '') + (operation || '') + (next || '');
 
   return (
-    <section className="calculator-container">
-      <h2 className="section-title">Let&apos;s do some math</h2>
-      <div className="calculator-content">
-        <div className="calculator">
-          <div className="output">
-            <p>{display || '0'}</p>
-          </div>
-          <div className="grid">
-            {buttons.map(({ text, className }) => (
-              <input
-                value={text}
-                className={`button grid-item ${className || ''}`}
-                key={text}
-                type="button"
-                onClick={onClickHandler}
-              />
-            ))}
-          </div>
-        </div>
+    <div className="calculator">
+      <div className="output">
+        <p>{display || '0'}</p>
       </div>
-    </section>
+      <div className="grid">
+        {buttons.map(({ text, className }) => (
+          <input
+            value={text}
+            className={`button grid-item ${className || ''}`}
+            key={text}
+            type="button"
+            onClick={onClickHandler}
+          />
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default Calculator;
+const CalculatorPage = () => (
+  <section className="calculator-container">
+    <h2 className="section-title">Let&apos;s do some math</h2>
+    <Calculator />
+  </section>
+);
+
+export default CalculatorPage;
