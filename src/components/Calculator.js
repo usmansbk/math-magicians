@@ -111,7 +111,9 @@ const Calculator = () => {
 const CalculatorPage = () => (
   <section className="calculator-container">
     <h2 className="section-title">Let&apos;s do some math</h2>
-    <Calculator />
+    <div className="calculator-content">
+      <Calculator />
+    </div>
   </section>
 );
 
