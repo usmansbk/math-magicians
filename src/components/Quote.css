@@ -2,8 +2,9 @@
 
 .quote-section {
     display: flex;
-    flex-grow: 2;
-    justify-content: center;
+    flex-grow: 1;
+    flex-direction: column;
+    gap: 40px;
     padding: 10%;
     background-image: url(../imgs/quote.png);
     background-repeat: no-repeat;
@@ -14,4 +15,11 @@
     font-size: 30px;
     color: #212121;
     font-family: 'Playfair Display', serif;
+}
+
+.line {
+  height: 4px;
+  background-color: #ff7f50;
+  width: 30%;
+  align-self: center;
 }

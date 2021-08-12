@@ -4,6 +4,7 @@ const quote = 'Mathematics is not about numbers, equations, computations, or alg
 
 const Quote = () => (
   <section className="quote-section">
+    <div className="line" />
     <h5 className="quote">{quote}</h5>
   </section>
 );
