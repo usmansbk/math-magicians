@@ -1,5 +1,5 @@
 import {
-  NavLink, Switch, Route, BrowserRouter as Router,
+  NavLink, Switch, Route, HashRouter as Router,
 } from 'react-router-dom';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
