@@ -5,10 +5,13 @@
     flex-grow: 2;
     justify-content: center;
     padding: 10%;
+    background-image: url(../imgs/quote.png);
+    background-repeat: no-repeat;
+    background-size: 160px;
 }
 
 .quote {
     font-size: 30px;
-    color: gray;
+    color: #212121;
     font-family: 'Playfair Display', serif;
 }
