@@ -12,6 +12,7 @@
 }
 
 .calculator {
+
 }
 
 .output {
@@ -20,8 +21,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: #95a5a6;
-  color: white;
+  background-color: #a29bfe;
   font-size: 20px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .bg-orange {
-  background-color: #e67e22;
+  background-color: #fab1a0;
 }
 
 .calculator-container {
