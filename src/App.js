@@ -24,7 +24,7 @@ const routes = [
 ];
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <>
       <header className="app-bar">
         <h1>Math Magicians</h1>
