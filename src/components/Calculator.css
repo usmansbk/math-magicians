@@ -8,16 +8,16 @@
 }
 
 .calculator {
-  width: 50%;
+  width: 25%;
 }
 
 .output {
   height: 48px;
-  padding: 0 4px;
+  padding: 0 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: lightslategray;
+  background-color: #95a5a6;
   color: white;
   font-size: 20px;
 }
@@ -34,6 +34,7 @@
   border: none;
   height: 48px;
   background-color: white;
+  font-weight: bolder;
 }
 
 .span-2-col {
@@ -41,7 +42,7 @@
 }
 
 .bg-orange {
-  background-color: orange;
+  background-color: #e67e22;
 }
 
 .calculator-container {

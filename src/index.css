@@ -50,10 +50,10 @@ a {
 
 .section-title {
   font-size: 48px;
-  color: orange;
+  color: #e67e22;
 }
 
 .active {
   font-weight: bold;
-  color: orange;
+  color: #e67e22;
 }
