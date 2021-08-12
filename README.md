@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://usmansbk.github.io/math-magicians)
+[Heroku](https://usmansbk-math-magicians.herokuapp.com/)
 
 ## Getting Started
 
