@@ -50,7 +50,7 @@ a {
 }
 
 .app-title {
-  color: #ff6b6b;
+  color: #ff7f50;
 }
 
 .section-title {
@@ -60,5 +60,5 @@ a {
 
 .active {
   font-weight: bold;
-  color: #ff6b6b;
+  color: #ff7f50;
 }
