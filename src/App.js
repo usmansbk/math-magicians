@@ -27,7 +27,7 @@ const App = () => (
   <Router basename={process.env.PUBLIC_URL}>
     <>
       <header className="app-bar">
-        <h1>Math Magicians</h1>
+        <h1 className="app-title">Math Magicians</h1>
         <nav className="nav">
           <ul className="nav-links">
             {routes.map(({ name, path }) => (

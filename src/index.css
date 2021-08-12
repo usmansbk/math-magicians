@@ -49,6 +49,10 @@ a {
   flex-grow: 1;
 }
 
+.app-title {
+  color: #ff6b6b;
+}
+
 .section-title {
   font-size: 48px;
   color: #6c5ce7;
@@ -56,5 +60,5 @@ a {
 
 .active {
   font-weight: bold;
-  color: #5f27cd;
+  color: #ff6b6b;
 }
