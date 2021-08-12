@@ -7,8 +7,11 @@
   opacity: 0.6;
 }
 
-.calculator {
+.calculator-content {
   width: 25%;
+}
+
+.calculator {
 }
 
 .output {
@@ -25,16 +28,16 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1px;
-  background-color: lightgray;
-  border: solid 1px lightgray;
+  gap: 2px;
 }
 
 .grid-item {
+  border-radius: 0;
   border: none;
   height: 48px;
   background-color: white;
   font-weight: bolder;
+  color: #121212;
 }
 
 .span-2-col {

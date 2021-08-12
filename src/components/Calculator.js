@@ -91,20 +91,22 @@ const Calculator = () => {
   return (
     <section className="calculator-container">
       <h2 className="section-title">Let&apos;s do some math</h2>
-      <div className="calculator">
-        <div className="output">
-          <p>{display || '0'}</p>
-        </div>
-        <div className="grid">
-          {buttons.map(({ text, className }) => (
-            <input
-              value={text}
-              className={`button grid-item ${className || ''}`}
-              key={text}
-              type="button"
-              onClick={onClickHandler}
-            />
-          ))}
+      <div className="calculator-content">
+        <div className="calculator">
+          <div className="output">
+            <p>{display || '0'}</p>
+          </div>
+          <div className="grid">
+            {buttons.map(({ text, className }) => (
+              <input
+                value={text}
+                className={`button grid-item ${className || ''}`}
+                key={text}
+                type="button"
+                onClick={onClickHandler}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
