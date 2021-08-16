@@ -14,7 +14,9 @@
 
 ## Live Demo
 
-[Live Demo Link](https://usmansbk.github.io/math-magicians)
+[Heroku](https://usmansbk-math-magicians.herokuapp.com/)
+
+[Netlify](https://hardcore-meitner-6153b1.netlify.app/)
 
 ## Getting Started
 

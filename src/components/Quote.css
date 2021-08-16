@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+
+.quote-section {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 40px;
+  padding: 10%;
+  background-image: url(../imgs/quote.png);
+  background-repeat: no-repeat;
+  background-size: 160px;
+}
+
+.quote {
+  font-size: 30px;
+  color: #212121;
+  font-family: "Playfair Display", serif;
+}
+
+.line {
+  height: 4px;
+  background-color: #ff7f50;
+  width: 30%;
+  align-self: center;
+}

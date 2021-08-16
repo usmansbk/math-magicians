@@ -1,51 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.button:hover {
-  opacity: 0.9;
-  cursor: pointer;
+html,
+body {
+  min-height: 100vh;
+  background-color: #ecf0f1;
 }
 
-.button:active {
-  opacity: 0.6;
-}
-
-.calculator {
-  background-color: lightgray;
-  padding-bottom: 1px;
-  width: 25%;
-}
-
-.output {
-  height: 48px;
-  padding: 0 4px;
+body {
   display: flex;
-  justify-content: flex-end;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-bar {
+  display: flex;
   align-items: center;
-  background-color: lightslategray;
-  color: white;
-  font-size: 20px;
+  justify-content: space-between;
+  padding: 16px 24px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1px;
-  margin-top: 1px;
+.nav-links {
+  display: flex;
+  gap: 40px;
 }
 
-.grid-item {
-  border: none;
-  height: 48px;
-  background-color: white;
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.span-2-col {
-  grid-column: 1 / span 2;
+.container {
+  padding: 16px 24px;
+  display: flex;
+  flex-grow: 1;
 }
 
-.bg-orange {
-  background-color: orange;
+.app-title {
+  color: #ff7f50;
+}
+
+.section-title {
+  font-size: 48px;
+  color: #6c5ce7;
+}
+
+.active {
+  font-weight: bold;
+  color: #ff7f50;
 }

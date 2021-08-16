@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react';
 import calculate from '../logic/calculate';
+import './Calculator.css';
 
 const buttons = [
   {
@@ -72,11 +73,15 @@ const Calculator = () => {
 
   const onClickHandler = useCallback((event) => {
     setState((prev) => {
-      const output = calculate(prev, event.target.value);
-      return ({
-        ...prev,
-        ...output,
-      });
+      try {
+        const output = calculate(prev, event.target.value);
+        return ({
+          ...prev,
+          ...output,
+        });
+      } catch (e) {
+        return prev;
+      }
     });
   }, []);
 
@@ -103,4 +108,13 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+const CalculatorPage = () => (
+  <section className="calculator-container">
+    <h2 className="section-title">Let&apos;s do some math</h2>
+    <div className="calculator-content">
+      <Calculator />
+    </div>
+  </section>
+);
+
+export default CalculatorPage;
