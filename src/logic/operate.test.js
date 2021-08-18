@@ -10,7 +10,7 @@ describe('Supported calculator operators', () => {
     expect(answer).toBe('4');
   });
 
-  test('4 + 1 = 3', () => {
+  test('4 - 1 = 3', () => {
     const a = 4;
     const b = 1;
 
