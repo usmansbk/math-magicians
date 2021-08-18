@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect home page to match working snapshot 1`] = `
+exports[`expect homepage to match working snapshot 1`] = `
 <section
   className="home"
 >
