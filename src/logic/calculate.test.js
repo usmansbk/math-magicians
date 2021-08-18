@@ -109,7 +109,7 @@ describe('Quick maths', () => {
     });
   });
 
-  test('* division is not supported', () => {
+  test('* multiplication is not supported', () => {
     const unsupportedOperation = () => {
       let data = {};
 
