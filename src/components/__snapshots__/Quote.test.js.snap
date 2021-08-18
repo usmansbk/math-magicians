@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Quote renders correctly 1`] = `
+exports[`expect quote page to match working snapshot 1`] = `
 <section
   className="quote-section"
 >
