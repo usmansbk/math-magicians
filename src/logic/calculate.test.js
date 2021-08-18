@@ -1,6 +1,6 @@
 import calculate from './calculate';
 
-describe('Calculator quick maths', () => {
+describe('Quick maths', () => {
   test('2 + 2 = 4', () => {
     let data = {};
 
@@ -31,6 +31,22 @@ describe('Calculator quick maths', () => {
     });
   });
 
+  test('-2 + 2 = 0', () => {
+    let data = {};
+
+    data = { ...data, ...calculate(data, '2') };
+    data = { ...data, ...calculate(data, '+/-') };
+    data = { ...data, ...calculate(data, '+') };
+    data = { ...data, ...calculate(data, '2') };
+    data = { ...data, ...calculate(data, '=') };
+
+    expect(data).toEqual({
+      total: '0',
+      next: null,
+      operation: null,
+    });
+  });
+
   test('2 x 2 = 4', () => {
     let data = {};
 
@@ -41,6 +57,23 @@ describe('Calculator quick maths', () => {
 
     expect(data).toEqual({
       total: '4',
+      next: null,
+      operation: null,
+    });
+  });
+
+  test('2.2 x 2 = 4.4', () => {
+    let data = {};
+
+    data = { ...data, ...calculate(data, '2') };
+    data = { ...data, ...calculate(data, '.') };
+    data = { ...data, ...calculate(data, '2') };
+    data = { ...data, ...calculate(data, 'x') };
+    data = { ...data, ...calculate(data, '2') };
+    data = { ...data, ...calculate(data, '=') };
+
+    expect(data).toEqual({
+      total: '4.4',
       next: null,
       operation: null,
     });
@@ -61,6 +94,21 @@ describe('Calculator quick maths', () => {
     });
   });
 
+  test('3 % 2 = 1', () => {
+    let data = {};
+
+    data = { ...data, ...calculate(data, '3') };
+    data = { ...data, ...calculate(data, '%') };
+    data = { ...data, ...calculate(data, '2') };
+    data = { ...data, ...calculate(data, '=') };
+
+    expect(data).toEqual({
+      total: '1',
+      next: null,
+      operation: null,
+    });
+  });
+
   test('/ division is not supported', () => {
     const unsupportedOperation = () => {
       let data = {};
@@ -74,5 +122,34 @@ describe('Calculator quick maths', () => {
     };
 
     expect(() => unsupportedOperation()).toThrow();
+  });
+
+  test('zero division should throw error', () => {
+    const zeroDivision = () => {
+      let data = {};
+
+      data = { ...data, ...calculate(data, '4') };
+      data = { ...data, ...calculate(data, '/') };
+      data = { ...data, ...calculate(data, '0') };
+      data = { ...data, ...calculate(data, '=') };
+
+      return data;
+    };
+
+    expect(() => zeroDivision()).toThrow();
+  });
+
+  test('invalid binary operation should throw error', () => {
+    const invalidBinaryOperation = () => {
+      let data = {};
+
+      data = { ...data, ...calculate(data, '/') };
+      data = { ...data, ...calculate(data, '2') };
+      data = { ...data, ...calculate(data, '=') };
+
+      return data;
+    };
+
+    expect(() => invalidBinaryOperation()).toThrow();
   });
 });
