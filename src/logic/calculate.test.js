@@ -109,6 +109,21 @@ describe('Quick maths', () => {
     });
   });
 
+  test('* division is not supported', () => {
+    const unsupportedOperation = () => {
+      let data = {};
+
+      data = { ...data, ...calculate(data, '4') };
+      data = { ...data, ...calculate(data, '*') };
+      data = { ...data, ...calculate(data, '2') };
+      data = { ...data, ...calculate(data, '=') };
+
+      return data;
+    };
+
+    expect(() => unsupportedOperation()).toThrow();
+  });
+
   test('/ division is not supported', () => {
     const unsupportedOperation = () => {
       let data = {};
