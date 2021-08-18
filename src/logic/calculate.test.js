@@ -109,51 +109,6 @@ describe('Quick maths', () => {
     });
   });
 
-  test('* multiplication is not supported', () => {
-    const unsupportedOperation = () => {
-      let data = {};
-
-      data = { ...data, ...calculate(data, '4') };
-      data = { ...data, ...calculate(data, '*') };
-      data = { ...data, ...calculate(data, '2') };
-      data = { ...data, ...calculate(data, '=') };
-
-      return data;
-    };
-
-    expect(() => unsupportedOperation()).toThrow();
-  });
-
-  test('/ division is not supported', () => {
-    const unsupportedOperation = () => {
-      let data = {};
-
-      data = { ...data, ...calculate(data, '4') };
-      data = { ...data, ...calculate(data, '/') };
-      data = { ...data, ...calculate(data, '2') };
-      data = { ...data, ...calculate(data, '=') };
-
-      return data;
-    };
-
-    expect(() => unsupportedOperation()).toThrow();
-  });
-
-  test('zero division should throw error', () => {
-    const zeroDivision = () => {
-      let data = {};
-
-      data = { ...data, ...calculate(data, '4') };
-      data = { ...data, ...calculate(data, '/') };
-      data = { ...data, ...calculate(data, '0') };
-      data = { ...data, ...calculate(data, '=') };
-
-      return data;
-    };
-
-    expect(() => zeroDivision()).toThrow();
-  });
-
   test('invalid binary operation should throw error', () => {
     const invalidBinaryOperation = () => {
       let data = {};
