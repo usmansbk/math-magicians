@@ -63,7 +63,7 @@ describe('Invalid operations', () => {
 
     const unsupportedOperation = () => operate(a, b, '*');
 
-    expect(() => unsupportedOperation()).toThrow();
+    expect(() => unsupportedOperation()).toThrow("Unknown operation '*'");
   });
 
   test('/ division is not supported', () => {
@@ -72,15 +72,15 @@ describe('Invalid operations', () => {
 
     const unsupportedOperation = () => operate(a, b, '/');
 
-    expect(() => unsupportedOperation()).toThrow();
+    expect(() => unsupportedOperation()).toThrow("Unknown operation '/'");
   });
 
   test('zero division should throw error', () => {
     const a = 2;
     const b = 0;
 
-    const zeroDivision = () => operate(a, b, '/');
+    const zeroDivision = () => operate(a, b, '÷');
 
-    expect(() => zeroDivision()).toThrow();
+    expect(() => zeroDivision()).toThrow('[big.js] Division by zero');
   });
 });

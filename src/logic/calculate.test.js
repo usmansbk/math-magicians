@@ -113,13 +113,13 @@ describe('Quick maths', () => {
     const invalidBinaryOperation = () => {
       let data = {};
 
-      data = { ...data, ...calculate(data, '/') };
+      data = { ...data, ...calculate(data, '÷') };
       data = { ...data, ...calculate(data, '2') };
       data = { ...data, ...calculate(data, '=') };
 
       return data;
     };
 
-    expect(() => invalidBinaryOperation()).toThrow();
+    expect(() => invalidBinaryOperation()).toThrow('one.div is not a function');
   });
 });
