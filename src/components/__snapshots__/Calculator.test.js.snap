@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator renders page correctly 1`] = `
+<section
+  className="calculator-container"
+>
+  <h2
+    className="section-title"
+  >
+    Let's do some math
+  </h2>
+  <div
+    className="calculator-content"
+  >
+    <div
+      className="calculator"
+    >
+      <div
+        className="output"
+      >
+        <p>
+          0
+        </p>
+      </div>
+      <div
+        className="grid"
+      >
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="AC"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="+/-"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="%"
+        />
+        <input
+          className="button grid-item bg-orange"
+          onClick={[Function]}
+          type="button"
+          value="÷"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="7"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="8"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="9"
+        />
+        <input
+          className="button grid-item bg-orange"
+          onClick={[Function]}
+          type="button"
+          value="x"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="4"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="5"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="6"
+        />
+        <input
+          className="button grid-item bg-orange"
+          onClick={[Function]}
+          type="button"
+          value="-"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="1"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="2"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="3"
+        />
+        <input
+          className="button grid-item bg-orange"
+          onClick={[Function]}
+          type="button"
+          value="+"
+        />
+        <input
+          className="button grid-item span-2-col"
+          onClick={[Function]}
+          type="button"
+          value="0"
+        />
+        <input
+          className="button grid-item "
+          onClick={[Function]}
+          type="button"
+          value="."
+        />
+        <input
+          className="button grid-item bg-orange"
+          onClick={[Function]}
+          type="button"
+          value="="
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;
