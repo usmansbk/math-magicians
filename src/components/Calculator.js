@@ -68,7 +68,7 @@ const buttons = [
   },
 ];
 
-const Calculator = () => {
+export const Calculator = () => {
   const [state, setState] = useState({});
 
   const onClickHandler = useCallback((event) => {
